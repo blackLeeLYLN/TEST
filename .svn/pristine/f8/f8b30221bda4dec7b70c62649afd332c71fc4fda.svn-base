@@ -1,0 +1,141 @@
+package com.boyuan.identifier.system.common;
+
+import android.app.Service;
+import android.content.Context;
+import android.net.ConnectivityManager;
+import android.net.NetworkInfo;
+import android.telephony.TelephonyManager;
+
+import java.io.File;
+import java.io.FileReader;
+import java.io.FileWriter;
+
+public final class Device
+{
+    public static final int NETWORK_TYPE_NONE = 0;
+    public static final int NETWORK_TYPE_WIFI = 1;
+    public static final int NETWORK_TYPE_MOBILE = 2;
+
+    public static int getNetworkType(Context context)
+    {
+    	ConnectivityManager mgr = (ConnectivityManager)context.getSystemService(Service.CONNECTIVITY_SERVICE);
+    	NetworkInfo info = mgr.getActiveNetworkInfo();
+    	if (null == info) return NETWORK_TYPE_NONE;
+    	if (info.getType() == ConnectivityManager.TYPE_WIFI) return NETWORK_TYPE_WIFI;
+        return NETWORK_TYPE_MOBILE;
+    }
+
+    public static String getDeviceID(Context context)
+    {
+    	TelephonyManager tm = (TelephonyManager) context.getSystemService(Service.TELEPHONY_SERVICE);
+    	return tm.getDeviceId();
+    }
+
+    public static void disablePanel()
+    {
+        FileWriter writer = null;
+        try
+        {
+            writer = new FileWriter("/proc/gpio_ctrl/rp_gpio_ctrl");
+            writer.write("touchdisable");
+        }
+        catch(Exception ex)
+        {
+            ex.printStackTrace();
+        }
+        finally
+        {
+            try { writer.close(); } catch(Exception x) { }
+        }
+    }
+
+    public static void enablePanel()
+    {
+        FileWriter writer = null;
+        try
+        {
+            writer = new FileWriter("/proc/gpio_ctrl/rp_gpio_ctrl");
+            writer.write("touchenable");
+        }
+        catch(Exception ex)
+        {
+            ex.printStackTrace();
+        }
+        finally
+        {
+            try { writer.close(); } catch(Exception x) { }
+        }
+    }
+
+    public static void setExposure(int val)
+    {
+        FileWriter writer = null;
+        try
+        {
+            writer = new FileWriter("/proc/sensor_ctrl/handexposure");
+            writer.write(String.valueOf(val));
+        }
+        catch(Exception ex)
+        {
+            ex.printStackTrace();
+        }
+        finally
+        {
+            try { writer.close(); } catch(Exception x) { }
+        }
+    }
+
+    public static String getSerialNumber()
+    {
+        String sn = null;
+        FileReader reader = null;
+        try
+        {
+            reader = new FileReader("/proc/gpio_ctrl/rp_gpio_ctrl");
+            char[] buff = new char[64];
+            reader.read(buff, 0, 64);
+            sn = String.valueOf(buff);
+        }
+        catch(Exception ex)
+        {
+            ex.printStackTrace();
+        }
+        finally
+        {
+            try { reader.close(); } catch(Exception x) { }
+        }
+        return sn;
+    }
+
+    public static void lightUp()
+    {
+        write("/proc/remote_stm32/light", "1");
+    }
+
+    public static void lightOff()
+    {
+        write("/proc/remote_stm32/light", "0");
+    }
+
+    private static void write(String fd, String data)
+    {
+        FileWriter writer = null;
+
+        try
+        {
+            File f = new File(fd);
+            if (!f.exists()) return;
+            writer = new FileWriter(f);
+            writer.write(data);
+        }
+        catch(Exception ex)
+        {
+            // do nothing here...
+            ex.printStackTrace();
+        }
+        finally
+        {
+            try { writer.close(); } catch(Exception e) { }
+        }
+    }
+}

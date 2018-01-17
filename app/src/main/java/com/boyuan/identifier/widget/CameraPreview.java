@@ -1,0 +1,96 @@
+package com.boyuan.identifier.widget;
+
+import android.content.Context;
+import android.hardware.Camera;
+import android.util.Log;
+import android.view.SurfaceHolder;
+import android.view.SurfaceView;
+
+public class CameraPreview extends SurfaceView implements SurfaceHolder.Callback
+{
+	SurfaceHolder mHolder;
+	Camera camera;
+	Camera.PreviewCallback previewListener;
+	
+	public CameraPreview(Context context, Camera camera)
+	{
+		super(context);
+		this.camera = camera;
+		
+		mHolder = this.getHolder();
+		mHolder.addCallback(this);
+		mHolder.setType(SurfaceHolder.SURFACE_TYPE_PUSH_BUFFERS);
+	}
+
+	@Override
+	public void surfaceCreated(SurfaceHolder holder)
+	{
+		try
+		{
+			// camera.setPreviewDisplay(holder);
+			// camera.startPreview();
+		}
+		catch(Exception ex)
+		{
+			// ...
+		}
+	}
+	
+	@Override
+	public void surfaceChanged(SurfaceHolder holder, int format, int width,
+			int height) {
+		if (mHolder.getSurface() == null) return;
+		
+		try
+		{
+			camera.stopPreview();
+		}
+		catch(Exception ex)
+		{
+			// ..
+			// ex.printStackTrace();
+		}
+		
+		try
+		{
+			camera.setPreviewDisplay(mHolder);
+			this.startPreview();
+		}
+		catch(Exception ex)
+		{
+			// ..
+			ex.printStackTrace();
+		}
+	}
+
+	public void setPreviewListener(Camera.PreviewCallback callback)
+	{
+		this.previewListener = callback;
+	}
+
+	public void startPreview()
+	{
+		// Camera.Parameters params = camera.getParameters();
+		// params.setPreviewFpsRange(20, 30);
+		// camera.setParameters(params);
+		camera.startPreview();
+		if (this.previewListener != null) camera.setPreviewCallback(this.previewListener);
+	}
+
+	@Override
+	public void surfaceDestroyed(SurfaceHolder holder)
+	{
+		try
+		{
+			camera.setPreviewCallback(null);
+			camera.stopPreview();
+			camera.release();
+		}
+		catch(Exception ex)
+		{
+			// ...
+		}
+		Log.d("houcheng", "camera preview released");
+	}
+
+}

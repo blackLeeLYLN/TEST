@@ -1,0 +1,430 @@
+package af.boyuan.com.rrraf;
+
+import android.content.Intent;
+import android.os.Bundle;
+import android.util.Log;
+import android.view.KeyEvent;
+import android.view.View;
+import android.view.ViewGroup;
+import android.widget.FrameLayout;
+import android.widget.ImageView;
+
+import com.boyuan.identifier.BaseActivity;
+import com.boyuan.identifier.system.common.Device;
+import com.boyuan.identifier.system.mission.AutoFocusing;
+import com.boyuan.identifier.system.mission.Mission;
+import com.boyuan.identifier.system.mission.MotorAction;
+import com.boyuan.identifier.widget.CameraPreview;
+
+/**
+ * Created by admin on 2016/7/5.自定义相机
+ */
+public class Camera extends BaseActivity
+{
+    android.hardware.Camera camera = null;
+    CameraPreview preview = null;
+    android.hardware.Camera.Parameters parameters = null;
+    int frameCount = 0;
+    int previewWidth = 0;
+    int previewHeight = 0;
+    String ratio = null;
+    Camera instance = null;
+    // long workId = 0;
+    // int originalWidth = 0;
+    // int originalHeight = 0;
+    // String imageSrc = null;
+    boolean ratio5X = false;
+    boolean ratio15X = false;
+    boolean ratio40X = false;
+
+    boolean motorMoving = false;
+
+    @Override
+    protected int getLayoutId() {
+        return R.layout.activity_camera;
+    }
+
+    @Override
+    protected void initListener()
+    {
+        findViewById(R.id.btn_af_5x).setOnClickListener(new View.OnClickListener()
+        {
+            @Override
+            public void onClick(View view)
+            {
+                new AutoFocusing(Camera.this, "af-5x", MotorAction.ratio_5).go();
+                ((ImageView)view).setImageResource(R.drawable.af_5x_now);
+                ((ImageView)findViewById(R.id.btn_af_15x)).setImageResource(R.drawable.af_15x);
+                ((ImageView)findViewById(R.id.btn_af_40x)).setImageResource(R.drawable.af_40x);
+                if (!"5x".equals(ratio)) tooltip("请将设备镜头向上拉起以拍摄5x的照片");
+                Device.setExposure(0x219);
+            }
+        });
+
+        findViewById(R.id.btn_af_15x).setOnClickListener(new View.OnClickListener()
+        {
+            @Override
+            public void onClick(View view)
+            {
+                new AutoFocusing(Camera.this, "af-15x", MotorAction.ratio_15).go();
+                ((ImageView)view).setImageResource(R.drawable.af_15x_now);
+                ((ImageView)findViewById(R.id.btn_af_5x)).setImageResource(R.drawable.af_5x);
+                ((ImageView)findViewById(R.id.btn_af_40x)).setImageResource(R.drawable.af_40x);
+                if ("5x".equals(ratio)) tooltip("请将设备镜头向下按下以拍摄更高倍率的照片");
+                Device.setExposure(0x20);
+            }
+        });
+
+        findViewById(R.id.btn_af_40x).setOnClickListener(new View.OnClickListener()
+        {
+            @Override
+            public void onClick(View view)
+            {
+                new AutoFocusing(Camera.this, "af-40x", MotorAction.ratio_40).go();
+                ((ImageView)view).setImageResource(R.drawable.af_40x_now);
+                ((ImageView)findViewById(R.id.btn_af_15x)).setImageResource(R.drawable.af_15x);
+                ((ImageView)findViewById(R.id.btn_af_5x)).setImageResource(R.drawable.af_5x);
+                if ("5x".equals(ratio)) tooltip("请将设备镜头向下按下以拍摄更高倍率的照片");
+                Device.setExposure(0x60);
+            }
+        });
+
+        bindEvent();
+    }
+
+    int steps = 0;
+    private int nextStep()
+    {
+        return steps++;
+    }
+
+    @Override
+    protected boolean fullscreen()
+    {
+        return true;
+    }
+
+    @Override
+    protected void initialized()
+    {
+        Bundle bundle = this.getIntent().getExtras();
+        // workId = bundle.getLong("work_id");
+        // imageSrc = bundle.getString("image_src");
+        // originalWidth = bundle.getInt("original_width");
+        // originalHeight = bundle.getInt("original_height");
+        motorMoving = true;
+        new AutoFocusing(Camera.this, "af-reset", MotorAction.reset).go();
+        tooltip("请将设备镜头向上拉起以拍摄5X的照片");
+    }
+
+    @Override
+    protected void onResume()
+    {
+        super.onResume();
+        initCamera();
+        Device.lightUp();
+    }
+
+    protected void initCamera()
+    {
+        instance = this;
+        new Mission("camera", this)
+        {
+            @Override
+            public Object handle() throws Exception
+            {
+                return android.hardware.Camera.open();
+            }
+        }.go();
+    }
+
+    private byte[] cameraData;
+    private int frameWidth;
+    private int frameHeight;
+    private void saveCameraData(final byte[] data, final int width, final int height)
+    {
+        this.frameCount += 1;
+        if (this.frameCount > 0)
+        {
+            this.frameWidth = width;
+            this.frameHeight = height;
+            this.cameraData = data;
+        }
+        /*
+        if (frameCount % 4 != 3) return;
+        new Mission("xxoo", this)
+        {
+            @Override
+            public Object handle() throws Exception
+            {
+                final YuvImage image = new YuvImage(data, ImageFormat.NV21, width, height, null);
+                ByteArrayOutputStream os = new ByteArrayOutputStream(data.length);
+                if(!image.compressToJpeg(new Rect(0, 0, width, height), 100, os))
+                {
+                    return null;
+                }
+                byte[] tmp = os.toByteArray();
+                Bitmap bmp = BitmapFactory.decodeByteArray(tmp, 0,tmp.length);
+                return bmp;
+            }
+        }.go();
+        */
+    }
+
+    public int getFrameWidth()
+    {
+        return this.frameWidth;
+    }
+
+    public int getFrameHeight()
+    {
+        return this.frameHeight;
+    }
+
+    public byte[] getCameraData()
+    {
+        /*
+        if (null == this.cameraData) return null;
+        byte[] buff = this.cameraData.clone();
+        this.cameraData = null;
+        return buff;
+        */
+        return this.cameraData;
+    }
+
+    public byte[] obtainCameraData()
+    {
+        if (null == this.cameraData) return null;
+        byte[] buff = this.cameraData.clone();
+        this.cameraData = null;
+        return buff;
+    }
+
+    @Override
+    public void complete(String mission, Object data) throws Exception
+    {
+        if ("camera".equals(mission))
+        {
+            try
+            {
+                camera = (android.hardware.Camera) data;
+                parameters = camera.getParameters();
+                parameters.set("redgain", "32");
+                parameters.set("bluegain", "32");
+                parameters.set("hand_exposure", "100");
+                // 通过这里设置摄像头分辨率
+                // parameters.setPreviewSize(320, 180);
+                // parameters.setPreviewSize(640, 360);
+                camera.setParameters(parameters);
+                camera.setDisplayOrientation(90);
+                preview = new CameraPreview(instance, camera);
+                preview.setPreviewListener(new android.hardware.Camera.PreviewCallback()
+                {
+                    @Override
+                    public void onPreviewFrame(byte[] data, android.hardware.Camera camera)
+                    {
+                        saveCameraData(data, camera.getParameters().getPreviewSize().width, camera.getParameters().getPreviewSize().height);
+                    }
+                });
+                ((FrameLayout)findViewById(R.id.camera_container)).addView(preview, new FrameLayout.LayoutParams(ViewGroup.LayoutParams.MATCH_PARENT, ViewGroup.LayoutParams.MATCH_PARENT));
+            }
+            catch(Exception ex)
+            {
+                ex.printStackTrace();
+                Log.d("houcheng", ex.toString());
+            }
+        }
+        if ("af-reset".equals(mission))
+        {
+            new AutoFocusing(Camera.this, "af-5x", MotorAction.ratio_5).go();
+        }
+        if ("af-5x".equals(mission))
+        {
+            motorMoving = false;
+            ratio = "5x";
+        }
+        if ("af-15x".equals(mission))
+        {
+            motorMoving = false;
+            ratio = "15x";
+            tooltip("停留在: " + data);
+        }
+        if ("af-40x".equals(mission))
+        {
+            motorMoving = false;
+            ratio = "40x";
+        }
+        if ("af-zoom-in".equals(mission))
+        {
+            motorMoving = false;
+            // ((TextView)findViewById(R.id.steps)).setText(String.valueOf(data));
+        }
+        if ("af-zoom-out".equals(mission))
+        {
+            motorMoving = false;
+            // ((TextView)findViewById(R.id.steps)).setText(String.valueOf(data));
+        }
+        if ("save_5x".equals(mission))
+        {
+            ratio5X = true;
+        }
+        if ("save_15x".equals(mission))
+        {
+            ratio15X = true;
+        }
+        if ("save_40x".equals(mission))
+        {
+            ratio40X = true;
+        }
+        if (mission.startsWith("progress:"))
+        {
+            // ((TextView)findViewById(R.id.steps)).setText(String.valueOf(data));
+        }
+        if ("submit".equals(mission))
+        {
+            tooltip("己保存成功");
+            this.finish();
+        }
+    }
+
+    @Override
+    public void error(String mission, Exception issue) throws Exception
+    {
+        if ("submit".equals(mission))
+        {
+            tooltip("出错啦：" + issue.toString());
+            uploading = false;
+        }
+    }
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState)
+    {
+        super.onCreate(savedInstanceState);
+    }
+
+    @Override
+    protected void onStop()
+    {
+        super.onStop();
+        try { camera.setPreviewCallback(null); } catch(Exception e) { }
+        try { camera.stopPreview(); } catch(Exception e) { }
+        try { camera.release(); } catch(Exception e) { }
+        Device.lightOff();
+    }
+
+    private boolean uploading = false;
+
+    // 点叉叉时触发
+    private void tryToExit()
+    {
+        if (motorMoving)
+        {
+            tooltip("正在对焦");
+            return;
+        }
+        if (uploading)
+        {
+            return;
+        }
+        this.finish();
+    }
+
+    // 点拍照按钮时触发
+    private void takePhoto()
+    {
+        tooltip("拍什么拍？");
+    }
+
+    // 单步缩小按钮
+    private void zoomOut()
+    {
+        motorMoving = true;
+        new AutoFocusing(this, "af-zoom-out", MotorAction.step_zoom_out).go();
+    }
+
+    // 单步放大按钮
+    private void zoomIn()
+    {
+        motorMoving = true;
+        new AutoFocusing(this, "af-zoom-in", MotorAction.step_zoom_in).go();
+    }
+
+    // 提交到云端按钮
+    private void submit()
+    {
+        tooltip("点这个小云朵干什么？");
+    }
+
+    private void bindEvent()
+    {
+        findViewById(R.id.iv_cha).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view)
+            {
+                tryToExit();
+            }
+        });
+
+        findViewById(R.id.iv_camera).setOnClickListener(new View.OnClickListener()
+        {
+            @Override
+            public void onClick(View view)
+            {
+                takePhoto();
+            }
+        });
+
+        findViewById(R.id.iv_left_decrease).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                zoomOut();
+            }
+        });
+
+        findViewById(R.id.iv_right_add).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view)
+            {
+                zoomIn();
+            }
+        });
+
+        findViewById(R.id.iv_right_round).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                submit();
+            }
+        });
+    }
+
+    public boolean onKeyDown(int keyCode, KeyEvent event)
+    {
+        if (keyCode == KeyEvent.KEYCODE_BACK)
+        {
+            if (uploading) return true;
+        }
+        if (keyCode == KeyEvent.KEYCODE_9)
+        {
+            tooltip("吃饱了没事干啊?");
+        }
+        return super.onKeyDown(keyCode, event);
+    }
+
+    @Override
+    protected void onActivityResult(int requestCode, int resultCode, Intent data)
+    {
+        // result code: 1 成功, 2 失败, 3 取消
+        if (resultCode != 1)
+        {
+            tooltip("位置设定己取消");
+            return;
+        }
+        Bundle bundle = data.getExtras();
+        offsetLeft = bundle.getInt("offset_left");
+        offsetTop = bundle.getInt("offset_top");
+    }
+
+    private int offsetLeft = -1;
+    private int offsetTop = -1;
+}

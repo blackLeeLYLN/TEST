@@ -1,0 +1,402 @@
+[
+    {
+        "merged": "E:\\RRRAF\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_edit_text_material.xml",
+        "source": "E:\\RRRAF\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.0.0\\res\\drawable\\abc_edit_text_material.xml"
+    },
+    {
+        "merged": "E:\\RRRAF\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_tab_indicator_material.xml",
+        "source": "E:\\RRRAF\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.0.0\\res\\drawable\\abc_tab_indicator_material.xml"
+    },
+    {
+        "merged": "E:\\RRRAF\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\left_line.png",
+        "source": "E:\\RRRAF\\app\\src\\main\\res\\drawable\\left_line.png"
+    },
+    {
+        "merged": "E:\\RRRAF\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\image3.png",
+        "source": "E:\\RRRAF\\app\\src\\main\\res\\drawable\\image3.png"
+    },
+    {
+        "merged": "E:\\RRRAF\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_ic_arrow_drop_right_black_24dp.xml",
+        "source": "E:\\RRRAF\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.0.0\\res\\drawable\\abc_ic_arrow_drop_right_black_24dp.xml"
+    },
+    {
+        "merged": "E:\\RRRAF\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\af_5x.png",
+        "source": "E:\\RRRAF\\app\\src\\main\\res\\drawable\\af_5x.png"
+    },
+    {
+        "merged": "E:\\RRRAF\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_ic_search_api_material.xml",
+        "source": "E:\\RRRAF\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.0.0\\res\\drawable\\abc_ic_search_api_material.xml"
+    },
+    {
+        "merged": "E:\\RRRAF\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_list_selector_holo_light.xml",
+        "source": "E:\\RRRAF\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.0.0\\res\\drawable\\abc_list_selector_holo_light.xml"
+    },
+    {
+        "merged": "E:\\RRRAF\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\back.png",
+        "source": "E:\\RRRAF\\app\\src\\main\\res\\drawable\\back.png"
+    },
+    {
+        "merged": "E:\\RRRAF\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\af_5x_dot.png",
+        "source": "E:\\RRRAF\\app\\src\\main\\res\\drawable\\af_5x_dot.png"
+    },
+    {
+        "merged": "E:\\RRRAF\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\about_bg.png",
+        "source": "E:\\RRRAF\\app\\src\\main\\res\\drawable\\about_bg.png"
+    },
+    {
+        "merged": "E:\\RRRAF\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\position01.png",
+        "source": "E:\\RRRAF\\app\\src\\main\\res\\drawable\\position01.png"
+    },
+    {
+        "merged": "E:\\RRRAF\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_switch_thumb_material.xml",
+        "source": "E:\\RRRAF\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.0.0\\res\\drawable\\abc_switch_thumb_material.xml"
+    },
+    {
+        "merged": "E:\\RRRAF\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\hugh.png",
+        "source": "E:\\RRRAF\\app\\src\\main\\res\\drawable\\hugh.png"
+    },
+    {
+        "merged": "E:\\RRRAF\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\image.png",
+        "source": "E:\\RRRAF\\app\\src\\main\\res\\drawable\\image.png"
+    },
+    {
+        "merged": "E:\\RRRAF\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\detail_small_01.png",
+        "source": "E:\\RRRAF\\app\\src\\main\\res\\drawable\\detail_small_01.png"
+    },
+    {
+        "merged": "E:\\RRRAF\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\af_40x_now.png",
+        "source": "E:\\RRRAF\\app\\src\\main\\res\\drawable\\af_40x_now.png"
+    },
+    {
+        "merged": "E:\\RRRAF\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\image4.png",
+        "source": "E:\\RRRAF\\app\\src\\main\\res\\drawable\\image4.png"
+    },
+    {
+        "merged": "E:\\RRRAF\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_seekbar_thumb_material.xml",
+        "source": "E:\\RRRAF\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.0.0\\res\\drawable\\abc_seekbar_thumb_material.xml"
+    },
+    {
+        "merged": "E:\\RRRAF\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\af_5x_now.png",
+        "source": "E:\\RRRAF\\app\\src\\main\\res\\drawable\\af_5x_now.png"
+    },
+    {
+        "merged": "E:\\RRRAF\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\xxoo.png",
+        "source": "E:\\RRRAF\\app\\src\\main\\res\\drawable\\xxoo.png"
+    },
+    {
+        "merged": "E:\\RRRAF\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\af_5x_now_dot.png",
+        "source": "E:\\RRRAF\\app\\src\\main\\res\\drawable\\af_5x_now_dot.png"
+    },
+    {
+        "merged": "E:\\RRRAF\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_list_selector_holo_dark.xml",
+        "source": "E:\\RRRAF\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.0.0\\res\\drawable\\abc_list_selector_holo_dark.xml"
+    },
+    {
+        "merged": "E:\\RRRAF\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\af_15x_now.png",
+        "source": "E:\\RRRAF\\app\\src\\main\\res\\drawable\\af_15x_now.png"
+    },
+    {
+        "merged": "E:\\RRRAF\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\welcme_bg.png",
+        "source": "E:\\RRRAF\\app\\src\\main\\res\\drawable\\welcme_bg.png"
+    },
+    {
+        "merged": "E:\\RRRAF\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_ic_clear_material.xml",
+        "source": "E:\\RRRAF\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.0.0\\res\\drawable\\abc_ic_clear_material.xml"
+    },
+    {
+        "merged": "E:\\RRRAF\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\image1.png",
+        "source": "E:\\RRRAF\\app\\src\\main\\res\\drawable\\image1.png"
+    },
+    {
+        "merged": "E:\\RRRAF\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\position02.png",
+        "source": "E:\\RRRAF\\app\\src\\main\\res\\drawable\\position02.png"
+    },
+    {
+        "merged": "E:\\RRRAF\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\search_bg.png",
+        "source": "E:\\RRRAF\\app\\src\\main\\res\\drawable\\search_bg.png"
+    },
+    {
+        "merged": "E:\\RRRAF\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_ratingbar_material.xml",
+        "source": "E:\\RRRAF\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.0.0\\res\\drawable\\abc_ratingbar_material.xml"
+    },
+    {
+        "merged": "E:\\RRRAF\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_textfield_search_material.xml",
+        "source": "E:\\RRRAF\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.0.0\\res\\drawable\\abc_textfield_search_material.xml"
+    },
+    {
+        "merged": "E:\\RRRAF\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\decrease.png",
+        "source": "E:\\RRRAF\\app\\src\\main\\res\\drawable\\decrease.png"
+    },
+    {
+        "merged": "E:\\RRRAF\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_item_background_holo_dark.xml",
+        "source": "E:\\RRRAF\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.0.0\\res\\drawable\\abc_item_background_holo_dark.xml"
+    },
+    {
+        "merged": "E:\\RRRAF\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\right.png",
+        "source": "E:\\RRRAF\\app\\src\\main\\res\\drawable\\right.png"
+    },
+    {
+        "merged": "E:\\RRRAF\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\lading_bg.png",
+        "source": "E:\\RRRAF\\app\\src\\main\\res\\drawable\\lading_bg.png"
+    },
+    {
+        "merged": "E:\\RRRAF\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\input_bg.png",
+        "source": "E:\\RRRAF\\app\\src\\main\\res\\drawable\\input_bg.png"
+    },
+    {
+        "merged": "E:\\RRRAF\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\detail_small_02.png",
+        "source": "E:\\RRRAF\\app\\src\\main\\res\\drawable\\detail_small_02.png"
+    },
+    {
+        "merged": "E:\\RRRAF\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\about_head.png",
+        "source": "E:\\RRRAF\\app\\src\\main\\res\\drawable\\about_head.png"
+    },
+    {
+        "merged": "E:\\RRRAF\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_btn_radio_material.xml",
+        "source": "E:\\RRRAF\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.0.0\\res\\drawable\\abc_btn_radio_material.xml"
+    },
+    {
+        "merged": "E:\\RRRAF\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\failure.png",
+        "source": "E:\\RRRAF\\app\\src\\main\\res\\drawable\\failure.png"
+    },
+    {
+        "merged": "E:\\RRRAF\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_ic_menu_overflow_material.xml",
+        "source": "E:\\RRRAF\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.0.0\\res\\drawable\\abc_ic_menu_overflow_material.xml"
+    },
+    {
+        "merged": "E:\\RRRAF\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_seekbar_track_material.xml",
+        "source": "E:\\RRRAF\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.0.0\\res\\drawable\\abc_seekbar_track_material.xml"
+    },
+    {
+        "merged": "E:\\RRRAF\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\image2.png",
+        "source": "E:\\RRRAF\\app\\src\\main\\res\\drawable\\image2.png"
+    },
+    {
+        "merged": "E:\\RRRAF\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_spinner_textfield_background_material.xml",
+        "source": "E:\\RRRAF\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.0.0\\res\\drawable\\abc_spinner_textfield_background_material.xml"
+    },
+    {
+        "merged": "E:\\RRRAF\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\af_40x.png",
+        "source": "E:\\RRRAF\\app\\src\\main\\res\\drawable\\af_40x.png"
+    },
+    {
+        "merged": "E:\\RRRAF\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\two_code.png",
+        "source": "E:\\RRRAF\\app\\src\\main\\res\\drawable\\two_code.png"
+    },
+    {
+        "merged": "E:\\RRRAF\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_ic_ab_back_material.xml",
+        "source": "E:\\RRRAF\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.0.0\\res\\drawable\\abc_ic_ab_back_material.xml"
+    },
+    {
+        "merged": "E:\\RRRAF\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\px_50.png",
+        "source": "E:\\RRRAF\\app\\src\\main\\res\\drawable\\px_50.png"
+    },
+    {
+        "merged": "E:\\RRRAF\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\af_40x_now_dot.png",
+        "source": "E:\\RRRAF\\app\\src\\main\\res\\drawable\\af_40x_now_dot.png"
+    },
+    {
+        "merged": "E:\\RRRAF\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_btn_colored_material.xml",
+        "source": "E:\\RRRAF\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.0.0\\res\\drawable\\abc_btn_colored_material.xml"
+    },
+    {
+        "merged": "E:\\RRRAF\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\search_btn.png",
+        "source": "E:\\RRRAF\\app\\src\\main\\res\\drawable\\search_btn.png"
+    },
+    {
+        "merged": "E:\\RRRAF\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\left_delete.png",
+        "source": "E:\\RRRAF\\app\\src\\main\\res\\drawable\\left_delete.png"
+    },
+    {
+        "merged": "E:\\RRRAF\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_ratingbar_small_material.xml",
+        "source": "E:\\RRRAF\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.0.0\\res\\drawable\\abc_ratingbar_small_material.xml"
+    },
+    {
+        "merged": "E:\\RRRAF\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\right_line.png",
+        "source": "E:\\RRRAF\\app\\src\\main\\res\\drawable\\right_line.png"
+    },
+    {
+        "merged": "E:\\RRRAF\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_list_selector_background_transition_holo_dark.xml",
+        "source": "E:\\RRRAF\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.0.0\\res\\drawable\\abc_list_selector_background_transition_holo_dark.xml"
+    },
+    {
+        "merged": "E:\\RRRAF\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\add_.png",
+        "source": "E:\\RRRAF\\app\\src\\main\\res\\drawable\\add_.png"
+    },
+    {
+        "merged": "E:\\RRRAF\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\placeholder_bg.png",
+        "source": "E:\\RRRAF\\app\\src\\main\\res\\drawable\\placeholder_bg.png"
+    },
+    {
+        "merged": "E:\\RRRAF\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\px_10.png",
+        "source": "E:\\RRRAF\\app\\src\\main\\res\\drawable\\px_10.png"
+    },
+    {
+        "merged": "E:\\RRRAF\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\phone.png",
+        "source": "E:\\RRRAF\\app\\src\\main\\res\\drawable\\phone.png"
+    },
+    {
+        "merged": "E:\\RRRAF\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\round_add.png",
+        "source": "E:\\RRRAF\\app\\src\\main\\res\\drawable\\round_add.png"
+    },
+    {
+        "merged": "E:\\RRRAF\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\add.png",
+        "source": "E:\\RRRAF\\app\\src\\main\\res\\drawable\\add.png"
+    },
+    {
+        "merged": "E:\\RRRAF\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\about_two_code.png",
+        "source": "E:\\RRRAF\\app\\src\\main\\res\\drawable\\about_two_code.png"
+    },
+    {
+        "merged": "E:\\RRRAF\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_ic_go_search_api_material.xml",
+        "source": "E:\\RRRAF\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.0.0\\res\\drawable\\abc_ic_go_search_api_material.xml"
+    },
+    {
+        "merged": "E:\\RRRAF\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\af_15x_dot.png",
+        "source": "E:\\RRRAF\\app\\src\\main\\res\\drawable\\af_15x_dot.png"
+    },
+    {
+        "merged": "E:\\RRRAF\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\cloud.png",
+        "source": "E:\\RRRAF\\app\\src\\main\\res\\drawable\\cloud.png"
+    },
+    {
+        "merged": "E:\\RRRAF\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\af_40x_dot.png",
+        "source": "E:\\RRRAF\\app\\src\\main\\res\\drawable\\af_40x_dot.png"
+    },
+    {
+        "merged": "E:\\RRRAF\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\af_15x_now_dot.png",
+        "source": "E:\\RRRAF\\app\\src\\main\\res\\drawable\\af_15x_now_dot.png"
+    },
+    {
+        "merged": "E:\\RRRAF\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\camera_bg.png",
+        "source": "E:\\RRRAF\\app\\src\\main\\res\\drawable\\camera_bg.png"
+    },
+    {
+        "merged": "E:\\RRRAF\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_item_background_holo_light.xml",
+        "source": "E:\\RRRAF\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.0.0\\res\\drawable\\abc_item_background_holo_light.xml"
+    },
+    {
+        "merged": "E:\\RRRAF\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\about_back_login.png",
+        "source": "E:\\RRRAF\\app\\src\\main\\res\\drawable\\about_back_login.png"
+    },
+    {
+        "merged": "E:\\RRRAF\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\px_100.png",
+        "source": "E:\\RRRAF\\app\\src\\main\\res\\drawable\\px_100.png"
+    },
+    {
+        "merged": "E:\\RRRAF\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_text_cursor_material.xml",
+        "source": "E:\\RRRAF\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.0.0\\res\\drawable\\abc_text_cursor_material.xml"
+    },
+    {
+        "merged": "E:\\RRRAF\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_btn_check_material.xml",
+        "source": "E:\\RRRAF\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.0.0\\res\\drawable\\abc_btn_check_material.xml"
+    },
+    {
+        "merged": "E:\\RRRAF\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\crosshair.png",
+        "source": "E:\\RRRAF\\app\\src\\main\\res\\drawable\\crosshair.png"
+    },
+    {
+        "merged": "E:\\RRRAF\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\image_ok.png",
+        "source": "E:\\RRRAF\\app\\src\\main\\res\\drawable\\image_ok.png"
+    },
+    {
+        "merged": "E:\\RRRAF\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\tab_right_press.png",
+        "source": "E:\\RRRAF\\app\\src\\main\\res\\drawable\\tab_right_press.png"
+    },
+    {
+        "merged": "E:\\RRRAF\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\tab_bg.png",
+        "source": "E:\\RRRAF\\app\\src\\main\\res\\drawable\\tab_bg.png"
+    },
+    {
+        "merged": "E:\\RRRAF\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\cirle.png",
+        "source": "E:\\RRRAF\\app\\src\\main\\res\\drawable\\cirle.png"
+    },
+    {
+        "merged": "E:\\RRRAF\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\avatar.png",
+        "source": "E:\\RRRAF\\app\\src\\main\\res\\drawable\\avatar.png"
+    },
+    {
+        "merged": "E:\\RRRAF\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\info.png",
+        "source": "E:\\RRRAF\\app\\src\\main\\res\\drawable\\info.png"
+    },
+    {
+        "merged": "E:\\RRRAF\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_ratingbar_indicator_material.xml",
+        "source": "E:\\RRRAF\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.0.0\\res\\drawable\\abc_ratingbar_indicator_material.xml"
+    },
+    {
+        "merged": "E:\\RRRAF\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\right_gou.png",
+        "source": "E:\\RRRAF\\app\\src\\main\\res\\drawable\\right_gou.png"
+    },
+    {
+        "merged": "E:\\RRRAF\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\position03.png",
+        "source": "E:\\RRRAF\\app\\src\\main\\res\\drawable\\position03.png"
+    },
+    {
+        "merged": "E:\\RRRAF\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\pwd_bg.png",
+        "source": "E:\\RRRAF\\app\\src\\main\\res\\drawable\\pwd_bg.png"
+    },
+    {
+        "merged": "E:\\RRRAF\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_cab_background_top_material.xml",
+        "source": "E:\\RRRAF\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.0.0\\res\\drawable\\abc_cab_background_top_material.xml"
+    },
+    {
+        "merged": "E:\\RRRAF\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\af_15x.png",
+        "source": "E:\\RRRAF\\app\\src\\main\\res\\drawable\\af_15x.png"
+    },
+    {
+        "merged": "E:\\RRRAF\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\ico_refresh.png",
+        "source": "E:\\RRRAF\\app\\src\\main\\res\\drawable\\ico_refresh.png"
+    },
+    {
+        "merged": "E:\\RRRAF\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_btn_default_mtrl_shape.xml",
+        "source": "E:\\RRRAF\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.0.0\\res\\drawable\\abc_btn_default_mtrl_shape.xml"
+    },
+    {
+        "merged": "E:\\RRRAF\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_seekbar_tick_mark_material.xml",
+        "source": "E:\\RRRAF\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.0.0\\res\\drawable\\abc_seekbar_tick_mark_material.xml"
+    },
+    {
+        "merged": "E:\\RRRAF\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\detail_image.png",
+        "source": "E:\\RRRAF\\app\\src\\main\\res\\drawable\\detail_image.png"
+    },
+    {
+        "merged": "E:\\RRRAF\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_dialog_material_background.xml",
+        "source": "E:\\RRRAF\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.0.0\\res\\drawable\\abc_dialog_material_background.xml"
+    },
+    {
+        "merged": "E:\\RRRAF\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_btn_borderless_material.xml",
+        "source": "E:\\RRRAF\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.0.0\\res\\drawable\\abc_btn_borderless_material.xml"
+    },
+    {
+        "merged": "E:\\RRRAF\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\camera.png",
+        "source": "E:\\RRRAF\\app\\src\\main\\res\\drawable\\camera.png"
+    },
+    {
+        "merged": "E:\\RRRAF\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\detail_small_03.png",
+        "source": "E:\\RRRAF\\app\\src\\main\\res\\drawable\\detail_small_03.png"
+    },
+    {
+        "merged": "E:\\RRRAF\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\common_bg.png",
+        "source": "E:\\RRRAF\\app\\src\\main\\res\\drawable\\common_bg.png"
+    },
+    {
+        "merged": "E:\\RRRAF\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\image_wrong.png",
+        "source": "E:\\RRRAF\\app\\src\\main\\res\\drawable\\image_wrong.png"
+    },
+    {
+        "merged": "E:\\RRRAF\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_cab_background_internal_bg.xml",
+        "source": "E:\\RRRAF\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.0.0\\res\\drawable\\abc_cab_background_internal_bg.xml"
+    },
+    {
+        "merged": "E:\\RRRAF\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_list_selector_background_transition_holo_light.xml",
+        "source": "E:\\RRRAF\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.0.0\\res\\drawable\\abc_list_selector_background_transition_holo_light.xml"
+    },
+    {
+        "merged": "E:\\RRRAF\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\success.png",
+        "source": "E:\\RRRAF\\app\\src\\main\\res\\drawable\\success.png"
+    },
+    {
+        "merged": "E:\\RRRAF\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_ic_voice_search_api_material.xml",
+        "source": "E:\\RRRAF\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.0.0\\res\\drawable\\abc_ic_voice_search_api_material.xml"
+    }
+]
